@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buongiorno Amore Mio ♥</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="bg"></div>
+<div id="stars"></div>
+<div id="sun"></div>
+<div id="horizon"></div>
+
+<!-- Nuvole -->
+<div class="cloud" id="cloud1">
+  <svg width="180" height="80" viewBox="0 0 180 80">
+    <ellipse cx="90" cy="60" rx="80" ry="28" fill="rgba(255,220,190,0.85)"/>
+    <ellipse cx="60" cy="48" rx="48" ry="32" fill="rgba(255,230,200,0.9)"/>
+    <ellipse cx="120" cy="44" rx="44" ry="30" fill="rgba(255,225,195,0.88)"/>
+    <ellipse cx="90" cy="38" rx="36" ry="26" fill="rgba(255,240,215,0.92)"/>
+  </svg>
+</div>
+<div class="cloud" id="cloud2">
+  <svg width="220" height="90" viewBox="0 0 220 90">
+    <ellipse cx="110" cy="68" rx="100" ry="30" fill="rgba(255,200,170,0.82)"/>
+    <ellipse cx="75" cy="52" rx="55" ry="36" fill="rgba(255,215,185,0.87)"/>
+    <ellipse cx="145" cy="48" rx="50" ry="34" fill="rgba(255,210,180,0.85)"/>
+    <ellipse cx="110" cy="40" rx="42" ry="28" fill="rgba(255,230,205,0.9)"/>
+  </svg>
+</div>
+<div class="cloud" id="cloud3">
+  <svg width="140" height="60" viewBox="0 0 140 60">
+    <ellipse cx="70" cy="45" rx="60" ry="20" fill="rgba(255,235,210,0.8)"/>
+    <ellipse cx="45" cy="36" rx="38" ry="24" fill="rgba(255,240,220,0.85)"/>
+    <ellipse cx="95" cy="34" rx="35" ry="22" fill="rgba(255,238,215,0.83)"/>
+  </svg>
+</div>
+
+<!-- Uccellini -->
+<div class="bird" id="bird1" style="top:22%; animation-delay:0s; animation-duration:16s;">🐦</div>
+<div class="bird" id="bird2" style="top:15%; animation-delay:4s; animation-duration:20s; font-size:1rem;">🐦</div>
+<div class="bird" id="bird3" style="top:28%; animation-delay:8s; animation-duration:18s; font-size:1.1rem;">🐦</div>
+
+<!-- Petali -->
+<div class="petal" id="p0" style="left:10%; animation-duration:6s; animation-delay:0s;">🌸</div>
+<div class="petal" id="p1" style="left:25%; animation-duration:7s; animation-delay:1s;">🌺</div>
+<div class="petal" id="p2" style="left:40%; animation-duration:5.5s; animation-delay:0.5s;">🌸</div>
+<div class="petal" id="p3" style="left:60%; animation-duration:8s; animation-delay:2s;">🌹</div>
+<div class="petal" id="p4" style="left:75%; animation-duration:6.5s; animation-delay:0.8s;">🌸</div>
+<div class="petal" id="p5" style="left:88%; animation-duration:7.5s; animation-delay:1.5s;">🌺</div>
+
+<!-- Cuore -->
+<div id="heart-wrap">
+  <div id="heart">
+    <svg id="heart-svg" viewBox="0 0 200 180" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="hg1" cx="35%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#ff8fa3"/>
+          <stop offset="60%" stop-color="#e8607a"/>
+          <stop offset="100%" stop-color="#c0395a"/>
+        </radialGradient>
+        <radialGradient id="hg2" cx="65%" cy="35%" r="65%">
+          <stop offset="0%" stop-color="#ff8fa3"/>
+          <stop offset="60%" stop-color="#e8607a"/>
+          <stop offset="100%" stop-color="#c0395a"/>
+        </radialGradient>
+        <!-- luccichio -->
+        <radialGradient id="shine" cx="30%" cy="28%" r="30%">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.55)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+        </radialGradient>
+      </defs>
+
+      <!-- metà sinistra -->
+      <g class="heart-left">
+        <path d="M100,155 C80,135 20,100 20,60 C20,35 35,20 55,20 C72,20 88,32 100,48" fill="url(#hg1)"/>
+        <path d="M100,155 C80,135 20,100 20,60 C20,35 35,20 55,20 C72,20 88,32 100,48" fill="url(#shine)"/>
+      </g>
+      <!-- metà destra -->
+      <g class="heart-right">
+        <path d="M100,155 C120,135 180,100 180,60 C180,35 165,20 145,20 C128,20 112,32 100,48" fill="url(#hg2)"/>
+      </g>
+
+      <!-- linea centrale (separazione) -->
+      <line x1="100" y1="48" x2="100" y2="155" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" stroke-dasharray="4 4"/>
+
+      <!-- piccolo brilluccio -->
+      <circle cx="68" cy="52" r="6" fill="rgba(255,255,255,0.35)" />
+      <circle cx="62" cy="46" r="3" fill="rgba(255,255,255,0.5)" />
+    </svg>
+  </div>
+  <div id="hint">tocca il cuore ♥</div>
+</div>
+
+<!-- Messaggi romantici -->
+<div id="messages">
+  <div class="msg" id="msg1">Buongiorno,<br>my luvv</div>
+  <div class="msg" id="msg2">— So che raramente riesco a darti un buongiorno come si deve —</div>
+  <div class="msg" id="msg3">
+    Ma anche se distanti,<br>
+    ci tenevo a darti un buongiorno speciale, a modo mio.<br>
+    Faccio cazzate e non sarò perfetto,<br>so che c'è di meglio ma comunque ti amo alla follia.<br>
+    Quindi buongirno amore, spero che almeno la giornata sia iniziata in un modo più carino del solito,<br>
+    Ti amo 💙💙💙💙
+  </div>
+  <div class="msg" id="msg4">♥ Ti amo, ogni giorno di più ♥</div>
+</div>
+</body>
+</html>
